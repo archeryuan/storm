@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+<configuration>
+	<property>
+		<name>fs.default.name</name>
+		<value>${ch-crawler.hdfs.default.name}</value>
+	</property>
+	<property>
+		<name>hadoop.tmp.dir</name>
+		<value>${hadoop.tmp.dir}</value>
+		<description>A base for other temporary directories.</description>
+	</property>
+	<!--property> <name>io.compression.codecs</name> <value> org.apache.hadoop.io.compress.SnappyCodec 
+		</value> </property -->
+
+	<property>
+		<name>hadoop.logfile.size</name>
+		<value>1000000000</value>
+		<description>The max size of each log file</description>
+	</property>
+
+	<property>
+		<name>hadoop.logfile.count</name>
+		<value>10</value>
+		<description>The max number of log files</description>
+	</property>
+</configuration>
